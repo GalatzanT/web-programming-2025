@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabel sortabil - Antet vertical</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      cursor: pointer;
+      text-align: center;
+    }
+    th {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<table class="sortabil" id="tabel1">
+  <tr>
+    <th onclick="sorteazaColoana(this)">Fructe</th>
+    <td>Mere</td>
+    <td>Pere</td>
+    <td>Banane</td>
+  </tr>
+  <tr>
+    <th onclick="sorteazaColoana(this)">Preț</th>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <th onclick="sorteazaColoana(this)">Cantitate</th>
+    <td>8</td>
+    <td>6</td>
+    <td>10</td>
+  </tr>
+</table>
+
+<script src="4.js"></script>
+</body>
+</html>

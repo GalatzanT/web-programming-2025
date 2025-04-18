@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .layout {
+    display: flex;
+    width: 100%;
+  }
+  
+  nav {
+    width: 30%;
+    background: #eee;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    border-bottom: 1px solid #aaa;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .content {
+    width: 70%;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+  }
+  
+  header, footer {
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 10px 0;
+  }
+  

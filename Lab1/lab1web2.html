@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Formular de Înregistrare la Curs Universitar</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <meta charset="UTF-8">
+</head>
+<body bgcolor="#f0f0f0">
+    <center>
+        <h1>Formular de Înregistrare la Curs Universitar</h1>
+        <h2>Universitatea Babeș-Bolyai</h2>
+    </center>
+
+    <form action="submit.html" method="post">
+        <fieldset>
+            <legend><strong>Informații Personale</strong></legend>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="30%" align="right"><b>Nume:</b></td>
+                    <td width="70%"><input type="text" name="nume" size="30" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Prenume:</b></td>
+                    <td><input type="text" name="prenume" size="30" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td align="right"><b>CNP:</b></td>
+                    <td><input type="text" name="cnp" size="13" maxlength="13"></td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Email:</b></td>
+                    <td><input type="email" name="email" size="30" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Telefon:</b></td>
+                    <td><input type="tel" name="telefon" size="15" maxlength="15"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Informații Academice</strong></legend>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="30%" align="right"><b>Facultate:</b></td>
+                    <td width="70%">
+                        <select name="facultate">
+                            <option value="informatica" selected>Facultatea de Matematică și Informatică</option>
+                            <option value="fizica">Facultatea de Fizică</option>
+                            <option value="chimie">Facultatea de Chimie și Inginerie Chimică</option>
+                            <option value="biologie">Facultatea de Biologie și Geologie</option>
+                            <option value="economie">Facultatea de Științe Economice și Gestiunea Afacerilor</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><b>An de studiu:</b></td>
+                    <td>
+                        <input type="radio" name="an" value="1" checked> 1
+                        <input type="radio" name="an" value="2"> 2
+                        <input type="radio" name="an" value="3"> 3
+                        <input type="radio" name="an" value="4"> 4 (Master)
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Specializare:</b></td>
+                    <td><input type="text" name="specializare" size="30" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Număr Matricol:</b></td>
+                    <td><input type="text" name="nr_matricol" size="10" maxlength="10"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Selecție Cursuri</strong></legend>
+            <p>Selectați cursurile la care doriți să vă înscrieți:</p>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                <tr bgcolor="#cccccc">
+                    <th width="10%" align="center">Cod</th>
+                    <th width="45%" align="center">Denumire Curs</th>
+                    <th width="15%" align="center">Credite</th>
+                    <th width="15%" align="center">Obligatoriu</th>
+                    <th width="15%" align="center">Selectat</th>
+                </tr>
+                <tr>
+                    <td align="center">MI001</td>
+                    <td>Programare Web</td>
+                    <td align="center">5</td>
+                    <td align="center">Da</td>
+                    <td align="center"><input type="checkbox" name="curs_mi001" value="1" checked disabled></td>
+                </tr>
+                <tr>
+                    <td align="center">MI002</td>
+                    <td>Algoritmi și Structuri de Date</td>
+                    <td align="center">6</td>
+                    <td align="center">Da</td>
+                    <td align="center"><input type="checkbox" name="curs_mi002" value="1" checked disabled></td>
+                </tr>
+                <tr>
+                    <td align="center">MI003</td>
+                    <td>Baze de Date</td>
+                    <td align="center">6</td>
+                    <td align="center">Da</td>
+                    <td align="center"><input type="checkbox" name="curs_mi003" value="1" checked disabled></td>
+                </tr>
+                <tr>
+                    <td align="center">MI004</td>
+                    <td>Programare Orientată pe Obiecte</td>
+                    <td align="center">5</td>
+                    <td align="center">Nu</td>
+                    <td align="center"><input type="checkbox" name="curs_mi004" value="1"></td>
+                </tr>
+                <tr>
+                    <td align="center">MI005</td>
+                    <td>Inteligență Artificială</td>
+                    <td align="center">5</td>
+                    <td align="center">Nu</td>
+                    <td align="center"><input type="checkbox" name="curs_mi005" value="1"></td>
+                </tr>
+                <tr>
+                    <td align="center">MI006</td>
+                    <td>Securitate Informatică</td>
+                    <td align="center">4</td>
+                    <td align="center">Nu</td>
+                    <td align="center"><input type="checkbox" name="curs_mi006" value="1"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Informații Cazare</strong></legend>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="30%" align="right"><b>Doriți cazare în cămin?</b></td>
+                    <td width="70%">
+                        <input type="radio" name="cazare" value="da"> Da
+                        <input type="radio" name="cazare" value="nu" checked> Nu
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Preferință cămin:</b></td>
+                    <td>
+                        <select name="camin" size="3" multiple>
+                            <option value="hasdeu">Complexul Hasdeu</option>
+                            <option value="economica">Căminele Economica I și II</option>
+                            <option value="marasti">Complexul Mărăști</option>
+                            <option value="observator">Complexul Observator</option>
+                            <option value="sport">Căminul Sport XXI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#f5f5f5">
+                            <tr>
+                                <td colspan="2" align="center"><b>Preferințe coleg de cameră</b></td>
+                            </tr>
+                            <tr>
+                                <td width="30%" align="right">Nume și prenume:</td>
+                                <td width="70%"><input type="text" name="coleg_nume" size="30" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Email coleg:</td>
+                                <td><input type="email" name="coleg_email" size="30" maxlength="100"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Informații Suplimentare</strong></legend>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="30%" align="right" valign="top"><b>Activități extracurriculare:</b></td>
+                    <td width="70%">
+                        <p>Selectați activitățile extracurriculare la care doriți să participați:</p>
+                        <ul>
+                            <li><input type="checkbox" name="act_sport" value="1"> Sport
+                                <ul>
+                                    <li><input type="checkbox" name="act_fotbal" value="1"> Fotbal</li>
+                                    <li><input type="checkbox" name="act_baschet" value="1"> Baschet</li>
+                                    <li><input type="checkbox" name="act_volei" value="1"> Volei</li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" name="act_cultural" value="1"> Activități culturale
+                                <ul>
+                                    <li><input type="checkbox" name="act_teatru" value="1"> Teatru</li>
+                                    <li><input type="checkbox" name="act_muzica" value="1"> Muzică</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><b>Limbi străine cunoscute:</b></td>
+                    <td>
+                        <ol type="A">
+                            <li><input type="checkbox" name="limbi_engleza" value="1"> Engleză</li>
+                            <li><input type="checkbox" name="limbi_franceza" value="1"> Franceză</li>
+                            <li><input type="checkbox" name="limbi_germana" value="1"> Germană</li>
+                            <li><input type="checkbox" name="limbi_spaniola" value="1"> Spaniolă</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><b>Nivelul de competență:</b></td>
+                    <td>
+                        <ol type="I">
+                            <li>Începător</li>
+                            <li>Mediu</li>
+                            <li>Avansat</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><b>Beneficii Studențești:</b></td>
+                    <td>
+                        <ol type="1" start="5">
+                            <li>Reducere transport public</li>
+                            <li>Acces la biblioteca universității</li>
+                            <li>Acces la bazele sportive</li>
+                            <li>Reduceri la evenimente culturale</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Comentarii și Observații</strong></legend>
+            <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td align="center">
+                        <p>Vă rugăm să adăugați orice comentarii sau observații suplimentare:</p>
+                        <textarea name="comentarii" cols="80" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <input type="checkbox" name="acord" value="1"> Sunt de acord cu <a href="termeni.html" target="_blank">termenii și condițiile</a> universității.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <input type="submit" value="Trimite Formular">
+                                    <input type="reset" value="Resetează">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <div align="center">
+        <p><strong>Formular de Înregistrare - Universitatea Babeș-Bolyai</strong></p>
+        <p>Pentru asistență, vă rugăm să contactați <a href="mailto:support@ubbcluj.ro">support@ubbcluj.ro</a></p>
+        <p><img src="logo.jpg" alt="Logo UBB" title="Universitatea Babeș-Bolyai" width="150" height="80"></p>
+    </div>
+</body>
+</html>

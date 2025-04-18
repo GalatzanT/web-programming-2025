@@ -1,0 +1,36 @@
+#Orizontal
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    background: #ccc;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  header, footer, .content {
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 10px 0;
+  }
+  

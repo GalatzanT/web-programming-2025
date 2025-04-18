@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="2.css">
+</head>
+<body>
+    <h2>Formular inscriere workshop JavaScript</h2>
+    <p>Workshopul va avea loc pe data de 15.04.2026. Completeaza formularul de mai jos si apasa pe trimite pentru a confirma participarea la eveniment!</p>
+    <div class="formular">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume"><br>
+
+        <label for="dataNastere">Data nașterii:</label>
+        <input type="date" id="dataNastere"><br>
+
+        <label for="varsta">Vârstă:</label>
+        <input type="number" id="varsta"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+
+        <button onclick="valideazaFormular()">Trimite</button>
+
+        <p id="mesaj"></p>
+    </div>
+
+    <script src="2.js"></script>
+</body>
+</html>

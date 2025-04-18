@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.formular {
+    max-width: 300px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input.eroare {
+    border: 2px solid red;
+}
+
+#mesaj {
+    font-weight: bold;
+    margin-top: 10px;
+}

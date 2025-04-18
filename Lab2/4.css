@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.icon {
+    width: 80px;
+    height: 70px;
+    background-image: url("meniu4.png");
+    background-position-y: -75px ;
+    background-position-x: calc(-74px * (11 + var(--i)));
+  }
+  
+  .icon:hover {
+    background-position-y: +138px;
+  }
+  
+  
