@@ -6,7 +6,7 @@ This repository contains my coursework and lab projects from the **Web Programmi
 
 ## 🧰 Tools Used
 
-- **Interpreter / Editor**: [Visual Studio Code](https://code.visualstudio.com/)
+- **Editor**: [Visual Studio Code](https://code.visualstudio.com/)
 - **Languages**: HTML, CSS, JavaScript
 
 ---
